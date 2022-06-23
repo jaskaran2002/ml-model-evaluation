@@ -5474,3 +5474,585 @@ AttributeError: 'OptunaSearchCV' object has no attribute 'cv_results_'
 2022-06-23 23:53:44,489:INFO:Checking exceptions
 2022-06-23 23:53:44,489:INFO:Preloading libraries
 2022-06-23 23:53:44,489:INFO:Preparing display monitor
+2022-06-24 00:13:55,096:INFO:Initializing save_model()
+2022-06-24 00:13:55,096:INFO:save_model(model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), model_name=1qdaModel, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('rem_outliers',
+                 Outlier(contamination=0.05, methods=['pca'], random_state=3527,
+                         target='target')),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-06-24 00:13:55,097:INFO:Adding model into prep_pipe
+2022-06-24 00:13:55,111:INFO:1qdaModel.pkl saved in current working directory
+2022-06-24 00:13:55,116:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                                               store_covariance=False,
+                                               tol=0.0001)]],
+         verbose=False)
+2022-06-24 00:13:55,116:INFO:save_model() successfully completed......................................
+2022-06-24 00:14:11,492:INFO:Initializing save_model()
+2022-06-24 00:14:11,492:INFO:save_model(model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), model_name=qdaModel_tuned_100itr, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('rem_outliers',
+                 Outlier(contamination=0.05, methods=['pca'], random_state=3527,
+                         target='target')),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-06-24 00:14:11,492:INFO:Adding model into prep_pipe
+2022-06-24 00:14:11,509:INFO:qdaModel_tuned_100itr.pkl saved in current working directory
+2022-06-24 00:14:11,515:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                                               store_covariance=False,
+                                               tol=0.0001)]],
+         verbose=False)
+2022-06-24 00:14:11,515:INFO:save_model() successfully completed......................................
+2022-06-24 00:14:31,165:INFO:Initializing save_model()
+2022-06-24 00:14:31,166:INFO:save_model(model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001), model_name=qdaModel_tuned, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('rem_outliers',
+                 Outlier(contamination=0.05, methods=['pca'], random_state=3527,
+                         target='target')),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-06-24 00:14:31,166:INFO:Adding model into prep_pipe
+2022-06-24 00:14:31,181:INFO:qdaModel_tuned.pkl saved in current working directory
+2022-06-24 00:14:31,187:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                                               store_covariance=False,
+                                               tol=0.0001)]],
+         verbose=False)
+2022-06-24 00:14:31,187:INFO:save_model() successfully completed......................................
+2022-06-24 00:14:40,644:INFO:Initializing save_model()
+2022-06-24 00:14:40,645:INFO:save_model(model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), model_name=qdaModel_tuned_optimize, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('rem_outliers',
+                 Outlier(contamination=0.05, methods=['pca'], random_state=3527,
+                         target='target')),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-06-24 00:14:40,645:INFO:Adding model into prep_pipe
+2022-06-24 00:14:40,658:INFO:qdaModel_tuned_optimize.pkl saved in current working directory
+2022-06-24 00:14:40,664:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 QuadraticDiscriminantAnalysis(priors=None,
+                                               reg_param=0.05437517067095166,
+                                               store_covariance=False,
+                                               tol=0.0001)]],
+         verbose=False)
+2022-06-24 00:14:40,664:INFO:save_model() successfully completed......................................
+2022-06-24 00:14:50,095:INFO:Initializing save_model()
+2022-06-24 00:14:50,096:INFO:save_model(model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), model_name=qdaModel_tuned_tune, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('rem_outliers',
+                 Outlier(contamination=0.05, methods=['pca'], random_state=3527,
+                         target='target')),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-06-24 00:14:50,096:INFO:Adding model into prep_pipe
+2022-06-24 00:14:50,113:INFO:qdaModel_tuned_tune.pkl saved in current working directory
+2022-06-24 00:14:50,119:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                                               store_covariance=False,
+                                               tol=0.0001)]],
+         verbose=False)
+2022-06-24 00:14:50,119:INFO:save_model() successfully completed......................................
+2022-06-24 00:14:57,428:INFO:Initializing save_model()
+2022-06-24 00:14:57,428:INFO:save_model(model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), model_name=qdaModel_tuned_optimize_ensemble_bagging, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('rem_outliers',
+                 Outlier(contamination=0.05, methods=['pca'], random_state=3527,
+                         target='target')),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-06-24 00:14:57,428:INFO:Adding model into prep_pipe
+2022-06-24 00:14:57,446:INFO:qdaModel_tuned_optimize_ensemble_bagging.pkl saved in current working directory
+2022-06-24 00:14:57,452:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='target',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('dummy', Dummify(target='target')),
+                ('fix_perfect', Remove_100(target='target')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 QuadraticDiscriminantAnalysis(priors=None,
+                                               reg_param=0.05437517067095166,
+                                               store_covariance=False,
+                                               tol=0.0001)]],
+         verbose=False)
+2022-06-24 00:14:57,452:INFO:save_model() successfully completed......................................
+2022-06-24 00:16:07,750:INFO:Initializing predict_model()
+2022-06-24 00:16:07,750:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:16:07,750:INFO:Checking exceptions
+2022-06-24 00:16:07,751:INFO:Preloading libraries
+2022-06-24 00:16:07,751:INFO:Preparing display monitor
+2022-06-24 00:16:48,181:INFO:Initializing predict_model()
+2022-06-24 00:16:48,182:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:16:48,182:INFO:Checking exceptions
+2022-06-24 00:16:48,182:INFO:Preloading libraries
+2022-06-24 00:16:48,182:INFO:Preparing display monitor
+2022-06-24 00:16:59,821:INFO:Initializing predict_model()
+2022-06-24 00:16:59,831:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:16:59,831:INFO:Checking exceptions
+2022-06-24 00:16:59,831:INFO:Preloading libraries
+2022-06-24 00:16:59,831:INFO:Preparing display monitor
+2022-06-24 00:17:16,925:INFO:Initializing predict_model()
+2022-06-24 00:17:16,926:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:17:16,926:INFO:Checking exceptions
+2022-06-24 00:17:16,926:INFO:Preloading libraries
+2022-06-24 00:17:16,926:INFO:Preparing display monitor
+2022-06-24 00:17:31,989:INFO:Initializing predict_model()
+2022-06-24 00:17:31,999:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:17:31,999:INFO:Checking exceptions
+2022-06-24 00:17:31,999:INFO:Preloading libraries
+2022-06-24 00:17:31,999:INFO:Preparing display monitor
+2022-06-24 00:17:41,558:INFO:Initializing predict_model()
+2022-06-24 00:17:41,558:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:17:41,559:INFO:Checking exceptions
+2022-06-24 00:17:41,559:INFO:Preloading libraries
+2022-06-24 00:17:41,559:INFO:Preparing display monitor
+2022-06-24 00:19:30,075:INFO:Initializing finalize_model()
+2022-06-24 00:19:30,085:INFO:finalize_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), fit_kwargs=None, groups=None, model_only=True, display=None, experiment_custom_tags=None, return_train_score=False)
+2022-06-24 00:19:30,085:INFO:Finalizing QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:30,086:INFO:Initializing create_model()
+2022-06-24 00:19:30,086:INFO:create_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=False, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-06-24 00:19:30,086:INFO:Checking exceptions
+2022-06-24 00:19:30,086:INFO:Importing libraries
+2022-06-24 00:19:30,086:INFO:Copying training dataset
+2022-06-24 00:19:30,088:INFO:Defining folds
+2022-06-24 00:19:30,088:INFO:Declaring metric variables
+2022-06-24 00:19:30,088:INFO:Importing untrained model
+2022-06-24 00:19:30,088:INFO:Declaring custom model
+2022-06-24 00:19:30,088:INFO:Quadratic Discriminant Analysis Imported succesfully
+2022-06-24 00:19:30,088:INFO:Starting cross validation
+2022-06-24 00:19:30,089:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-06-24 00:19:36,252:INFO:Calculating mean and std
+2022-06-24 00:19:36,264:INFO:Creating metrics dataframe
+2022-06-24 00:19:36,272:INFO:Finalizing model
+2022-06-24 00:19:36,509:INFO:create_model_container: 33
+2022-06-24 00:19:36,510:INFO:master_model_container: 33
+2022-06-24 00:19:36,510:INFO:display_container: 13
+2022-06-24 00:19:36,510:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:36,510:INFO:create_model() succesfully completed......................................
+2022-06-24 00:19:36,858:INFO:create_model_container: 33
+2022-06-24 00:19:36,858:INFO:master_model_container: 33
+2022-06-24 00:19:36,858:INFO:display_container: 12
+2022-06-24 00:19:36,858:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:36,858:INFO:finalize_model() succesfully completed......................................
+2022-06-24 00:19:38,687:INFO:Initializing finalize_model()
+2022-06-24 00:19:38,687:INFO:finalize_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), fit_kwargs=None, groups=None, model_only=True, display=None, experiment_custom_tags=None, return_train_score=False)
+2022-06-24 00:19:38,687:INFO:Finalizing QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:38,688:INFO:Initializing create_model()
+2022-06-24 00:19:38,688:INFO:create_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=False, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-06-24 00:19:38,688:INFO:Checking exceptions
+2022-06-24 00:19:38,688:INFO:Importing libraries
+2022-06-24 00:19:38,688:INFO:Copying training dataset
+2022-06-24 00:19:38,689:INFO:Defining folds
+2022-06-24 00:19:38,689:INFO:Declaring metric variables
+2022-06-24 00:19:38,689:INFO:Importing untrained model
+2022-06-24 00:19:38,689:INFO:Declaring custom model
+2022-06-24 00:19:38,690:INFO:Quadratic Discriminant Analysis Imported succesfully
+2022-06-24 00:19:38,690:INFO:Starting cross validation
+2022-06-24 00:19:38,690:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-06-24 00:19:42,378:INFO:Calculating mean and std
+2022-06-24 00:19:42,381:INFO:Creating metrics dataframe
+2022-06-24 00:19:42,392:INFO:Finalizing model
+2022-06-24 00:19:42,532:INFO:create_model_container: 33
+2022-06-24 00:19:42,532:INFO:master_model_container: 33
+2022-06-24 00:19:42,532:INFO:display_container: 13
+2022-06-24 00:19:42,533:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:42,533:INFO:create_model() succesfully completed......................................
+2022-06-24 00:19:42,819:INFO:create_model_container: 33
+2022-06-24 00:19:42,820:INFO:master_model_container: 33
+2022-06-24 00:19:42,820:INFO:display_container: 12
+2022-06-24 00:19:42,820:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:42,820:INFO:finalize_model() succesfully completed......................................
+2022-06-24 00:19:43,223:INFO:Initializing finalize_model()
+2022-06-24 00:19:43,223:INFO:finalize_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001), fit_kwargs=None, groups=None, model_only=True, display=None, experiment_custom_tags=None, return_train_score=False)
+2022-06-24 00:19:43,223:INFO:Finalizing QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:43,224:INFO:Initializing create_model()
+2022-06-24 00:19:43,224:INFO:create_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=False, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-06-24 00:19:43,224:INFO:Checking exceptions
+2022-06-24 00:19:43,224:INFO:Importing libraries
+2022-06-24 00:19:43,224:INFO:Copying training dataset
+2022-06-24 00:19:43,225:INFO:Defining folds
+2022-06-24 00:19:43,225:INFO:Declaring metric variables
+2022-06-24 00:19:43,225:INFO:Importing untrained model
+2022-06-24 00:19:43,225:INFO:Declaring custom model
+2022-06-24 00:19:43,225:INFO:Quadratic Discriminant Analysis Imported succesfully
+2022-06-24 00:19:43,226:INFO:Starting cross validation
+2022-06-24 00:19:43,226:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-06-24 00:19:44,512:INFO:Calculating mean and std
+2022-06-24 00:19:44,514:INFO:Creating metrics dataframe
+2022-06-24 00:19:44,522:INFO:Finalizing model
+2022-06-24 00:19:44,776:INFO:create_model_container: 33
+2022-06-24 00:19:44,777:INFO:master_model_container: 33
+2022-06-24 00:19:44,778:INFO:display_container: 13
+2022-06-24 00:19:44,778:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:44,778:INFO:create_model() succesfully completed......................................
+2022-06-24 00:19:45,100:INFO:create_model_container: 33
+2022-06-24 00:19:45,100:INFO:master_model_container: 33
+2022-06-24 00:19:45,101:INFO:display_container: 12
+2022-06-24 00:19:45,101:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:45,101:INFO:finalize_model() succesfully completed......................................
+2022-06-24 00:19:45,455:INFO:Initializing finalize_model()
+2022-06-24 00:19:45,455:INFO:finalize_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), fit_kwargs=None, groups=None, model_only=True, display=None, experiment_custom_tags=None, return_train_score=False)
+2022-06-24 00:19:45,456:INFO:Finalizing QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:45,456:INFO:Initializing create_model()
+2022-06-24 00:19:45,456:INFO:create_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=False, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-06-24 00:19:45,456:INFO:Checking exceptions
+2022-06-24 00:19:45,456:INFO:Importing libraries
+2022-06-24 00:19:45,456:INFO:Copying training dataset
+2022-06-24 00:19:45,457:INFO:Defining folds
+2022-06-24 00:19:45,458:INFO:Declaring metric variables
+2022-06-24 00:19:45,458:INFO:Importing untrained model
+2022-06-24 00:19:45,458:INFO:Declaring custom model
+2022-06-24 00:19:45,458:INFO:Quadratic Discriminant Analysis Imported succesfully
+2022-06-24 00:19:45,458:INFO:Starting cross validation
+2022-06-24 00:19:45,459:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-06-24 00:19:46,733:INFO:Calculating mean and std
+2022-06-24 00:19:46,735:INFO:Creating metrics dataframe
+2022-06-24 00:19:46,743:INFO:Finalizing model
+2022-06-24 00:19:46,901:INFO:create_model_container: 33
+2022-06-24 00:19:46,901:INFO:master_model_container: 33
+2022-06-24 00:19:46,902:INFO:display_container: 13
+2022-06-24 00:19:46,902:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:46,902:INFO:create_model() succesfully completed......................................
+2022-06-24 00:19:47,223:INFO:create_model_container: 33
+2022-06-24 00:19:47,223:INFO:master_model_container: 33
+2022-06-24 00:19:47,223:INFO:display_container: 12
+2022-06-24 00:19:47,224:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:47,224:INFO:finalize_model() succesfully completed......................................
+2022-06-24 00:19:47,594:INFO:Initializing finalize_model()
+2022-06-24 00:19:47,594:INFO:finalize_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), fit_kwargs=None, groups=None, model_only=True, display=None, experiment_custom_tags=None, return_train_score=False)
+2022-06-24 00:19:47,595:INFO:Finalizing QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:47,595:INFO:Initializing create_model()
+2022-06-24 00:19:47,596:INFO:create_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=False, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-06-24 00:19:47,596:INFO:Checking exceptions
+2022-06-24 00:19:47,596:INFO:Importing libraries
+2022-06-24 00:19:47,596:INFO:Copying training dataset
+2022-06-24 00:19:47,598:INFO:Defining folds
+2022-06-24 00:19:47,599:INFO:Declaring metric variables
+2022-06-24 00:19:47,599:INFO:Importing untrained model
+2022-06-24 00:19:47,599:INFO:Declaring custom model
+2022-06-24 00:19:47,599:INFO:Quadratic Discriminant Analysis Imported succesfully
+2022-06-24 00:19:47,599:INFO:Starting cross validation
+2022-06-24 00:19:47,600:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-06-24 00:19:48,886:INFO:Calculating mean and std
+2022-06-24 00:19:48,888:INFO:Creating metrics dataframe
+2022-06-24 00:19:48,896:INFO:Finalizing model
+2022-06-24 00:19:49,118:INFO:create_model_container: 33
+2022-06-24 00:19:49,118:INFO:master_model_container: 33
+2022-06-24 00:19:49,118:INFO:display_container: 13
+2022-06-24 00:19:49,119:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:49,119:INFO:create_model() succesfully completed......................................
+2022-06-24 00:19:49,469:INFO:create_model_container: 33
+2022-06-24 00:19:49,469:INFO:master_model_container: 33
+2022-06-24 00:19:49,470:INFO:display_container: 12
+2022-06-24 00:19:49,470:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:49,470:INFO:finalize_model() succesfully completed......................................
+2022-06-24 00:19:49,862:INFO:Initializing finalize_model()
+2022-06-24 00:19:49,862:INFO:finalize_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), fit_kwargs=None, groups=None, model_only=True, display=None, experiment_custom_tags=None, return_train_score=False)
+2022-06-24 00:19:49,863:INFO:Finalizing QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:49,863:INFO:Initializing create_model()
+2022-06-24 00:19:49,863:INFO:create_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=False, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-06-24 00:19:49,863:INFO:Checking exceptions
+2022-06-24 00:19:49,863:INFO:Importing libraries
+2022-06-24 00:19:49,864:INFO:Copying training dataset
+2022-06-24 00:19:49,865:INFO:Defining folds
+2022-06-24 00:19:49,865:INFO:Declaring metric variables
+2022-06-24 00:19:49,865:INFO:Importing untrained model
+2022-06-24 00:19:49,865:INFO:Declaring custom model
+2022-06-24 00:19:49,865:INFO:Quadratic Discriminant Analysis Imported succesfully
+2022-06-24 00:19:49,866:INFO:Starting cross validation
+2022-06-24 00:19:49,866:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-06-24 00:19:51,187:INFO:Calculating mean and std
+2022-06-24 00:19:51,189:INFO:Creating metrics dataframe
+2022-06-24 00:19:51,196:INFO:Finalizing model
+2022-06-24 00:19:51,319:INFO:create_model_container: 33
+2022-06-24 00:19:51,319:INFO:master_model_container: 33
+2022-06-24 00:19:51,319:INFO:display_container: 13
+2022-06-24 00:19:51,320:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:51,320:INFO:create_model() succesfully completed......................................
+2022-06-24 00:19:51,624:INFO:create_model_container: 33
+2022-06-24 00:19:51,624:INFO:master_model_container: 33
+2022-06-24 00:19:51,624:INFO:display_container: 12
+2022-06-24 00:19:51,625:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001)
+2022-06-24 00:19:51,625:INFO:finalize_model() succesfully completed......................................
+2022-06-24 00:19:54,232:INFO:Initializing predict_model()
+2022-06-24 00:19:54,233:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:19:54,233:INFO:Checking exceptions
+2022-06-24 00:19:54,233:INFO:Preloading libraries
+2022-06-24 00:19:54,233:INFO:Preparing display monitor
+2022-06-24 00:19:54,907:INFO:Initializing predict_model()
+2022-06-24 00:19:54,909:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:19:54,909:INFO:Checking exceptions
+2022-06-24 00:19:54,909:INFO:Preloading libraries
+2022-06-24 00:19:54,909:INFO:Preparing display monitor
+2022-06-24 00:19:55,782:INFO:Initializing predict_model()
+2022-06-24 00:19:55,783:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.09,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:19:55,783:INFO:Checking exceptions
+2022-06-24 00:19:55,784:INFO:Preloading libraries
+2022-06-24 00:19:55,784:INFO:Preparing display monitor
+2022-06-24 00:19:57,056:INFO:Initializing predict_model()
+2022-06-24 00:19:57,057:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:19:57,057:INFO:Checking exceptions
+2022-06-24 00:19:57,057:INFO:Preloading libraries
+2022-06-24 00:19:57,057:INFO:Preparing display monitor
+2022-06-24 00:19:58,005:INFO:Initializing predict_model()
+2022-06-24 00:19:58,006:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.06,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:19:58,006:INFO:Checking exceptions
+2022-06-24 00:19:58,006:INFO:Preloading libraries
+2022-06-24 00:19:58,006:INFO:Preparing display monitor
+2022-06-24 00:19:58,804:INFO:Initializing predict_model()
+2022-06-24 00:19:58,804:INFO:predict_model(estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.05437517067095166,
+                              store_covariance=False, tol=0.0001), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-06-24 00:19:58,804:INFO:Checking exceptions
+2022-06-24 00:19:58,804:INFO:Preloading libraries
+2022-06-24 00:19:58,805:INFO:Preparing display monitor
